@@ -23,11 +23,11 @@ let obj = {
     name: 'Hugo', 
     age: 32, 
     cat: ['Kitty'], 
-    date: {
+    data: {
         phone: '55612811', 
         email: 'hugsamuelrohusaar@gmail.com'
     }
-}
+};
 console.log(typeof obj);
 function hello() {
     console.log('hello');
