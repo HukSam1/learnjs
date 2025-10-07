@@ -1,20 +1,37 @@
-let text = 'Hello' + 'World' + '!';
-console.log(text);
-text += 'yeee';
-console.log(text);
-text = "Don't do this ;P";
-text = 'don\'t do\n this\t ;P';
-console.log(text);
-text = 'dscapmjksndcinsdjkindclksnldsm'  + 
-        'dscapmjksndcinsdjkindclksnldsm'; 
-let name = 'Hugo';
-let age = 17;
-text = `Hello
-this is multi line
-text`;
-console.log(text);
-text = 'Hello ' + name + '! You are ' + age + ' years old!';
-text = `Hello ${name}! You are ${age} years old!`;
-console.log(text);
-console.log(text.lenght);
-console.log(text.toUpperCase());
+let bool = true;
+bool = false;
+bool = true && false; // AND
+bool = false && true; // AND
+bool = false && false; // AND
+bool = true && true; // AND
+bool = true || false; // OR
+bool = false || true; // OR
+bool = false || false; // OR
+bool = true || true; // OR
+bool = !true; // NOT
+bool = !false;
+
+bool = (true || false && true) && !(false || false || true && true);
+
+console.log(bool);
+bool = 10 > 5;
+console.log(bool);
+bool = 10 < 5;
+console.log(bool);
+bool = 10 > 10;
+console.log(bool);
+bool = 10 < 10;
+console.log(bool);
+bool = 10 == 10;
+console.log(bool);
+bool = 10 <= 10;
+bool = 10 >= 10;
+console.log(bool);
+bool = 10 != 4;
+console.log(bool);
+bool = '10' == 10;
+console.log(bool);
+bool = '10' === 10;
+console.log(bool);
+bool = '10' !== 10;
+console.log(bool);
