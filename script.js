@@ -37,7 +37,7 @@ switch (day) {
         break;    
     case 4:
         console.log('Neljapäev');
-        break;
+        break;    
     case 5:    
     case 6:
         console.log('Pidupäev');
