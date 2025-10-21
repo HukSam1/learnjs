@@ -1,30 +1,63 @@
-let array = [1, 2, 3, 4];
-console.log(array);
-console.log(array[0]);
-array[2] = 10;
-console.log(array);
-array = ['hello', 1, 2, 3, true, [4, 5, 6]];
-console.log(array);
-console.log(array[5][1]);
-array = [
-    [
-        [1,2,3], 
-        [1,2,3], 
-        [1,2,3],
-    ], 
-    [
-        [1,2,3], 
-        [1,2,3], 
-        [1,2,3],
-    ], 
-    [
-        [1,2,3], 
-        [1,2,3], 
-        [1,2,3],
-    ], 
-];
-array =[[[[[1]]]]];
-console.log(array[0][0][0][0][0]);
-array = [1, 2, 3, 4]
-console.log(array.lenght);
-console.log(array.join('0'));
+function hello () {
+    console.log('Hello World!')
+}
+
+hello();
+hello();
+hello();
+
+function helloName(name= 'Nameless') {
+    console.log(`Hello ${name}!`);
+}
+
+helloName('Hugo');
+helloName('Skibidi');
+helloName('Rizzler');
+helloName();
+
+function sum(a, b){
+    return a+b;
+    console.log('After return'); // never runs
+}
+
+let answer = sum(4, 6);
+console.log(answer);
+
+let sum2 = function (a, b) {
+    return a+b;
+}
+console.log(sum2(3, 5));
+
+let sum3 =(a,b) => {
+    return a+b;
+}
+
+console.log(sum3(2,3));
+
+let sum4 = (a,b) => a+b;
+
+console.log(sum4(6,4));
+
+let square = a => a*a;
+
+console.log(square(6));
+
+let obj = {
+    name: 'Hugo',
+    age: 17,
+    sum1: function (a,b) {
+        return a+b+this.age;
+    },
+    sum2: (a,b) => {
+        return a+b+this.age;
+    },
+    sum3: (a,b) => a+b+this.age,
+    sum4(a,b) {
+        return a+b+this.age;
+    }
+}
+
+console.log(obj.sum1(1,1));
+console.log(obj.sum2(1,1));
+console.log(obj.sum3(1,1));
+console.log(obj.sum4(1,1));
