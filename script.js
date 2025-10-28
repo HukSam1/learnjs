@@ -1,26 +1,33 @@
-let nums = [6,3,5,7,9,4,2,8,1];
+console.log(window, {document});
+let heading = document.querySelector('h1');
+console.log({heading});
+heading.innerText = 'Hello DOM!';
 
-nums.forEach(num => console.log(num));
-nums.forEach((num,i) => console.log(num,i));
+let button = document.querySelector('button');
 
-let even = nums.filter(num => num%2 === 0);
-console.log(even);
-let sum = nums.reduce((sum, num) => sum+num);
-console.log(sum);
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 
-let sorted = nums.sort((a,b) => {
-    if(a > b) {
-        return 1;
-    }
-    if(a < b) {
-        returm -1;
-    }
-    return 0;
+button.addEventListener('click', event => {
+    console.log(event);
+    let color = getRandomColor();
+    heading.innerText = color;
+    heading.style.color = color;
 });
-console.log(sorted);
-let sorted2 = nums.sort((a,b) => a-b);
-console.log(sorted2);
 
-let squares = nums.map(num => num*num);
+setInterval(() => {
+document.documentElement.style.backround = getRandomColor();
+}, 100);
 
-console.log(squares);
+let input = document.querySelector('input');
+
+input.addEventListener('input', event => {
+    console.log(event);
+    heading.innerText = input.value.split('').reverse().join('');
+});
