@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/HukSam1/learnjs#readme",
   "dependencies": {
+    "bulma": "^1.0.4",
     "vite": "^7.1.12"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.93.3"
   }
 }
