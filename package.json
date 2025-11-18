@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/HukSam1/learnjs#readme",
   "dependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
     "bulma": "^1.0.4",
     "vite": "^7.1.12"
   },
